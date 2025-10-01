@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder 🍳</h1>
+        <p>Enter ingredients you have, separated by commas.</p>
+    </header>
+
+    <main class="container">
+        <div class="search-container">
+            <input type="text" id="ingredient-input" placeholder="e.g., chicken, rice, broccoli">
+            <button id="search-btn">Find Recipes</button>
+        </div>
+        
+        <div class="filter-container">
+            <label>
+            <select id="cuisine-filter">
+                <option value="">Any Cuisine</option>
+                <option value="Italian">Italian</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Indian">Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Thai">Thai</option>
+                <option value="American">American</option>
+            </select>
+            <select id="diet-filter">
+                <option value="">Any Diet</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Gluten Free">Gluten Free</option>
+                <option value="Ketogenic">Ketogenic</option>
+            </select>
+            </label>
+        </div>
+        
+        <div id="recipe-results" class="recipe-grid">
+            </div>
+    </main>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
